@@ -4,6 +4,12 @@ body,span.p{
 h1,h2,h3,h4,h5,h6,a{
     font-family: 'Rubik', sans-serif;
 }
+img{
+    max-width: 100%;
+}
+.grybg{
+    background-color: #f9fafa;
+}
 
 /* begain-main-style */
 
@@ -177,3 +183,164 @@ body .btn-primary:hover::after{
     font-size: 19px;
 }
 
+/* begine part 2css */
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.client-logo{}
+.client-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+/* about section */
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png);
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img-text h2{}
+.about-img-text p{}
+
+.about-text{}
+.finix-text h6{
+    color: #e63b3d;
+    font-weight: 400;
+}
+.finix-text h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.finix-text p{
+    color: #606060;
+    font-size: 18px;
+}
+.finix-text strong{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.finix-text ul li{
+    padding: 5px 0;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: 'font Awesome 5 Free';
+    font-weight: 600;
+    color: #e63b3d;
+    margin-right: 10px;
+}
+
+/* why choose us section */
+.features-item{
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    position: relative;
+    transition: .5s;
+
+}
+.features-item:hover{
+    transform: translateY(-12px);
+}
+.features-item::before{
+    content: "";
+    position: absolute;
+    top: -135px;
+    right: 0;
+    left: 0;
+    margin: 0;
+    width: 90%;
+    height: 70%;
+    background: #fdebeb;
+    border-radius: 50%;
+}
+.features-item .ft-icon{
+    position: relative;
+    z-index: 1;
+}
+.features-item .ft-icon i{
+    color: #e73c3e;
+    font-size: 32px;
+    background: #ddd;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+}
+.features-item:hover .features-item .ft-icon i{
+    color: #e73c3e;
+}
+. bivo{
+    margin-top: -30px;
+}
+.ft-icon{}
+.ft-icon h3{}
+.ft-icon p{}
+.finix-text{
+    position: relative;
+}
+
+.finix-text{
+    position: relative;
+}
+.paly-animation-btn {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	background: #fff;
+	font-size: 60px;
+	text-align: center;
+	line-height: 90px;
+	color: #e73a3e;
+	border-radius: 50%;
+	position: absolute;
+	right: 41%;
+	bottom: 51px;
+}
+.paly-animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e73a3e;
+    border-radius: 50%;
+    animation: palybtn 1.6s ease-out infinite;
+}
+@keyframes palybtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
